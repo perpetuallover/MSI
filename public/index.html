@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.css">
+	<link rel="stylesheet" href="stylesheets/style.css">
+	<script src="libs/jquery/dist/jquery.js"></script>
+	<script src="libs/angular/angular.js"></script>
+	
+</head>
+
+<body ng-app="app">
+	<my-login></my-login>
+	<div ng-controller = "MainCtrl">
+	<div ng-show="!!loginInfo.username">Welcom,{{user.username}}, 
+		<a class="btn btn-danger" ng-click="logout()">Logout</a>
+	</div>
+	</div>
+	<script src="app.js"></script>
+	<script src="login.js"></script>
+</body>
+</html>
